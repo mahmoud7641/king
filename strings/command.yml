@@ -45,10 +45,10 @@ RESTART_COMMAND : ["reboot","ريستارت"]
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo","رفع ثانوي"]
 DELSUDO_COMMAND : ["delsudo", "rmsudo", "تنزيل ثانوي"]
-SUDOUSERS_COMMAND : ["sudolist", "listsudo", "الثانويين]
+SUDOUSERS_COMMAND : ["sudolist", "listsudo"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["broadcast", "gcast", "اذاعة" ,"ذيع"]
+BROADCAST_COMMAND : ["broadcast", "gcast"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["blacklistchat", "blchat"]

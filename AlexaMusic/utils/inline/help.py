@@ -42,8 +42,37 @@ def help_pannel(_, START: Union[bool, int] = None):
             [
                 InlineKeyboardButton(
                     text=_["H_B_4"],
-                    callback_data="help_callback hb4"
+                    callback_data="help_callback hb4",
                 ),
             ],
-       ]
-                              )
+            mark,
+        ]
+    )
+    return upl
+
+
+def help_back_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["BACK_BUTTON"],
+                    callback_data=f"settings_back_helper",
+                ),
+                InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
+            ]
+        ]
+    )
+    return upl
+
+
+def private_help_panel(_):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?start=help",
+            ),
+        ],
+    ]
+    return buttons

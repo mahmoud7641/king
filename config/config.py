@@ -17,12 +17,6 @@ from dotenv import load_dotenv
 from pyrogram import filters
 
 load_dotenv()
-
-#اشتراك اجباري
-
-MUST_JOIN = getenv(
-    "MUST_JOIN", "YY5Y8"
-    #باقي الفارات
     
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")

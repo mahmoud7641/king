@@ -42,7 +42,7 @@ def languageCB(mystic):
         if await is_maintenance() is False:
             if CallbackQuery.from_user.id not in SUDOERS:
                 return await CallbackQuery.answer(
-                    "» البوت تحت الصيانة لبعض الوقت, من فضلك اذهب إلى [جروب الدعم](https://t.me/VY_GROUP) لمعرفة السبب."
+                    "» البوت تحت الصيانة لبعض الوقت, من فضلك اذهب إلى [جروب الدعم](https://t.me/VY_GROUP) لمعرفة السبب.",
                     show_alert=True,
                 )
         try:

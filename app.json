@@ -1,0 +1,65 @@
+{
+    "name": "بوت تشغيل القران",
+    "description": "افضل بوت تشغيل القران.",
+    "logo": "https://telegra.ph/file/a1b7519bff0646140915b.jpg",
+    "keywords": [
+    "l"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "ايبي ايدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ايبي هاش ",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي المطور.",
+        "value": "1095638828",
+        "required": true
+      },        
+      "MONGO_DB_URI": {
+        "description": "كود مونجو",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "جلسة بايروجورام.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ايبي هيروكو",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم تطبيق هيروكو",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ايدي جروب السجل.",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }

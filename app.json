@@ -3,7 +3,7 @@
     "description": "Deploy Alexa music on railwey make sure to star the projecte.",
     "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
     "keywords": [
-    "o",
+    "o"
     ],
     "env": {
       "API_ID": {

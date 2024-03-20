@@ -1,54 +1,63 @@
 {
-    "name": "بوت تشغيل القران",
-    "description": "افضل بوت تشغيل القران.",
-    "logo": "https://telegra.ph/file/a1b7519bff0646140915b.jpg",
+    "name": "Alexa Music",
+    "description": "Deploy Alexa music on railwey make sure to star the projecte.",
+    "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
     "keywords": [
-    "l"
+    "o",
     ],
-    "stack": "container",
     "env": {
       "API_ID": {
-        "description": "ايبي ايدي",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "ايبي هاش ",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "توكن البوت",
+        "description": "A Bot's token from Botfather",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "ايدي المطور.",
-        "value": "1095638828",
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "5303133436",
         "required": true
       },        
       "MONGO_DB_URI": {
-        "description": "كود مونجو",
+        "description": "Mongo DB URL",
+        "value": "",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot.",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "جلسة بايروجورام.",
+        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "ايبي هيروكو",
+        "description": "Your Heroku account's API key",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "اسم تطبيق هيروكو",
+        "description": "Your heroku app name",
         "value": "",
         "required": false
       },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/TheTeamAlexa/AlexaMusic",
+        "required": true
+      },
       "LOG_GROUP_ID": {
-        "description": "ايدي جروب السجل.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
         "required": true
       }
@@ -58,7 +67,7 @@
               "url": "heroku/python"
           },
           {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+              "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview.git"
           }
       ],
       "stack": "container"
